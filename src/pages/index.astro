@@ -1,9 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-const allPosts = await Astro.glob("../posts/*.md");
-const { pageTitle } = Astro.props;
+import Greeting from "../components/Greeting.jsx";
+const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<h2>My awesome blog subtitle</h2>
+	<Greeting
+		client:load
+		messages={["Hej", "Hallo", "Hola", "Habari"]}
+	/>
 </BaseLayout>
