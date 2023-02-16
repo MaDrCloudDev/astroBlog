@@ -10,8 +10,8 @@ const { pageTitle } = Astro.props;
 		<meta charset='utf-8' />
 		<link
 			rel='icon'
-			type='image/svg+xml'
-			href='/favicon.svg'
+			type='image/png'
+			href='/favicon.png'
 		/>
 		<meta
 			name='viewport'
@@ -23,7 +23,7 @@ const { pageTitle } = Astro.props;
 		/>
 		<title>{pageTitle}</title>
 	</head>
-	<body>
+	<body class='max-w-2xl mx-auto justify-center'>
 		<Header />
 		<h1>{pageTitle}</h1>
 		<slot />
