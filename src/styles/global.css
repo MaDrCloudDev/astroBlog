@@ -21,6 +21,7 @@ h1 {
 }
 
 /* nav styles */
+
 .hamburger {
 	padding-right: 20px;
 	cursor: pointer;
@@ -53,11 +54,6 @@ h1 {
 	text-transform: uppercase;
 }
 
-.hamburger {
-    display: none;
-  }
-}
-
 .nav-links a:hover,
 a:focus {
 	background-color: #ff9776;
@@ -80,13 +76,17 @@ a:focus {
 		display: inline-block;
 		padding: 15px 20px;
 	}
+
+	.hamburger {
+		display: none;
+	}
 }
 
 .dark body {
 	background-color: #0d0950;
 	color: #fff;
-  }
-  
-  .dark .nav-links a {
+}
+
+.dark .nav-links a {
 	color: #fff;
-  }
+}

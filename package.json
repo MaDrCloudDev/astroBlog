@@ -1,5 +1,5 @@
 {
-	"name": "astroblog",
+	"name": "madrclouddev-astroblog",
 	"type": "module",
 	"version": "0.0.1",
 	"scripts": {
@@ -12,7 +12,9 @@
 	"dependencies": {
 		"@astrojs/preact": "^2.0.3",
 		"@astrojs/rss": "^2.1.0",
+		"@astrojs/tailwind": "^3.0.1",
 		"astro": "^2.0.12",
-		"preact": "^10.12.1"
+		"preact": "^10.12.1",
+		"tailwindcss": "^3.2.6"
 	}
 }
