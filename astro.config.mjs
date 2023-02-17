@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 import preact from "@astrojs/preact";
@@ -7,6 +7,11 @@ import preact from "@astrojs/preact";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
+import cloudflare from "@astrojs/cloudflare";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), tailwind()]
+	integrations: [preact(), tailwind()],
+	output: "server",
+	adapter: cloudflare({ mode: "directory" }),
 });
