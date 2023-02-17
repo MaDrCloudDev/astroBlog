@@ -1,33 +1,3 @@
-.hamburger {
-	padding-right: 20px;
-	cursor: pointer;
-}
-
-.hamburger .line {
-	display: block;
-	width: 40px;
-	height: 5px;
-	margin-bottom: 10px;
-}
-
-.expanded {
-	display: unset;
-}
-
-@media screen and (min-width: 636px) {
-	.nav-links {
-		margin-left: 5em;
-		display: block;
-		position: static;
-		width: auto;
-		background: none;
-	}
-
-	.hamburger {
-		display: none;
-	}
-}
-
 .dark body {
 	background-color: black;
 	color: white;

@@ -24,11 +24,29 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body class='max-w-2xl mx-auto justify-center'>
-		<Navigation />
+		<header class='sticky top-0 z-50 bg-white dark:bg-black'>
+			<Navigation />
+		</header>
 		<slot />
 		<Footer />
-		<script>
-			import "../scripts/menu.js";
-		</script>
 	</body>
 </html>
+
+<script is:inline>
+	const theme = (() => {
+		if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+			return localStorage.getItem("theme");
+		}
+		if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+			return "dark";
+		}
+		return "light";
+	})();
+
+	if (theme === "light") {
+		document.documentElement.classList.remove("dark");
+	} else {
+		document.documentElement.classList.add("dark");
+	}
+	window.localStorage.setItem("theme", theme);
+</script>
