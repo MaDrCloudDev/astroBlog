@@ -10,17 +10,22 @@ import Social from "./Social.astro";
 	}
 </style>
 
-<footer class='ml-6'>
-	<Social
-		platform='madr.io'
-		username=''
-	/>
-	<Social
-		platform='github.com'
-		username='madrclouddev'
-	/>
-	<!-- <Social
-		platform='github.com'
-		username='madrclouddev'
-	/> -->
+<footer class='ml-6 justify-between mb-8'>
+	<div>
+		<Social
+			platform='madr.io'
+			username=''
+		/>
+		<Social
+			platform='github.com'
+			username='madrclouddev'
+		/>
+	</div>
+	<div class='mr-8'>
+		<a
+			class='dark:hover:text-[#fffb00] hover:text-[#328eef]'
+			href='https://madr.blog/rss.xml'
+			>RSS</a
+		>
+	</div>
 </footer>

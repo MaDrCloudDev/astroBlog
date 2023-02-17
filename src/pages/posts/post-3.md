@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Third Blog Post
-author: Astro Learner
-description: "I had some challenges, but asking in the community really helped!"
+title: "Third Blog Post"
+pubDate: 2023-01-01
+description: "My third post."
+author: "MaDrCloudDev"
 image:
-  url: "https://astro.build/assets/blog/community-day/cover.jpg"
-  alt: "The word community with a heart."
-pubDate: 2022-07-15
-tags: ["astro", "learning in public", "setbacks", "community"]
+  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  alt: "Astro logo"
+tags: ["astro", "blogging", "learning in public"]
 ---
 
 # h1 Heading 8-)

@@ -1,13 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Fourth Blog Post
-author: Astro Learner
-description: "This post will show up on its own!"
+title: Fourth Blog Post
+author: MaDr
+description: "I love Astro!"
 image:
-  url: "https://docs.astro.build/default-og-image.png"
-  alt: "The word “astro” against an illustration of planets and stars."
-pubDate: 2022-08-08
-tags: ["astro", "successes"]
+  url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
+  alt: "Astro thumbnail"
+pubDate: 2023-01-03
+tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 
 # An h1 header

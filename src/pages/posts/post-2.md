@@ -1,12 +1,12 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: My Second Blog Post
-author: Astro Learner
+title: Second Blog Post
+author: MaDr
 description: "After learning some Astro, I couldn't stop!"
 image:
   url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
-  alt: "Thumbnails of websites from the Astro Showcase site."
-pubDate: 2022-07-08
+  alt: "Astro thumbnail"
+pubDate: 2023-01-02
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 

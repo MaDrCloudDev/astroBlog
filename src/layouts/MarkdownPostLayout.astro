@@ -4,15 +4,19 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-	<div class='prose dark:prose-invert p-6'>
+	<div class='flex flex-col text-center'>
 		<p>{frontmatter.pubDate.slice(0, 10)}</p>
-		<p><em>{frontmatter.description}</em></p>
+		<h2 class='text-2xl font-bold'><em>{frontmatter.description}</em></h2>
 		<p>Written by: {frontmatter.author}</p>
-		<img
-			src={frontmatter.image.url}
-			width='300'
-			alt={frontmatter.image.alt}
-		/>
+		<div class='flex justify-center'>
+			<img
+				src={frontmatter.image.url}
+				width='300'
+				alt={frontmatter.image.alt}
+			/>
+		</div>
+	</div>
+	<div class='prose dark:prose-invert p-4'>
 		<slot />
 	</div>
 </BaseLayout>
