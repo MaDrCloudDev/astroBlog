@@ -1,22 +1,22 @@
 ---
-const { title, url } = Astro.props;
+const { title, url, link } = Astro.props;
 ---
 
 <a
 	class='group aspect-video hover:!text-default'
-	href={url}>
+	href={link}>
 	<figure
 		class='relative h-full w-full overflow-hidden px-6 py-2 hover:accent-[#328eef]'>
 		<img
 			class='object-cover w-full h-full transition-all duration-300 bg-cover group-hover:scale-105 group-hover:opacity-40 group-focus:scale-105 group-focus:opacity-40'
-			src='https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/campmadrs_d5ztba.webp'
+			src={url}
 			alt='/'
 		/>
 		<figcaption class='absolute inset-0'>
 			<div
 				class='flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100'>
 				<h3
-					class='text-center font-extrabold uppercase text-xl mb-2 text-[#328eef]'>
+					class='text-center bg-black rounded-full bg-opacity-60 p-2 font-extrabold uppercase text-xl mb-2 text-[#328eef]'>
 					{title}
 				</h3>
 				<p

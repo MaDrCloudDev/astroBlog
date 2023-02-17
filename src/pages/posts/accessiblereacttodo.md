@@ -1,21 +1,21 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Third Blog Post"
+title: "accessibleReactTodo"
+link: "/posts/accessiblereacttodo"
 pubDate: 2023-01-01
-description: "My third post."
+description: "My first post."
 author: "MaDrCloudDev"
 image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/accessiblereacttodo_vlokwc.webp"
   alt: "Astro logo"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-# h1 Heading 8-)
+## h2 Heading
 
 <h1>Hello World!</h1>
  
 <p>👋 Hi, I love emojis a lot 🤓</p>
-## h2 Heading
 
 ### h3 Heading
 

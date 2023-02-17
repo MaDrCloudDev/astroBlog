@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Second Blog Post
-author: MaDr
-description: "After learning some Astro, I couldn't stop!"
+title: "weHadLeftTheGround"
+link: "/posts/wehadlefttheground"
+author: "MaDr"
+description: "I love Astro!"
 image:
-  url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wehadlefttheground_lkgkkt.webp"
   alt: "Astro thumbnail"
-pubDate: 2023-01-02
+pubDate: 2023-01-03
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---
 

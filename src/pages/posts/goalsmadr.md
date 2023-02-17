@@ -1,10 +1,11 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: Fourth Blog Post
-author: MaDr
+title: "goalsMaDr"
+link: "/posts/goalsmadr"
+author: "MaDr"
 description: "I love Astro!"
 image:
-  url: "https://astro.build/assets/blog/astro-showcase/astro-showcase-screenshot.jpg"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/goalsmadr_lol3t0.webp"
   alt: "Astro thumbnail"
 pubDate: 2023-01-03
 tags: ["astro", "blogging", "learning in public", "successes"]

@@ -1,20 +1,22 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "First Blog Post"
+title: "astroDocumentationTheme"
+link: /posts/astrodocumentationtheme
 pubDate: 2023-01-01
-description: "My first post."
+description: "My third post."
 author: "MaDrCloudDev"
 image:
-  url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/astrodocumentationtheme_m5e5qf.webp"
   alt: "Astro logo"
 tags: ["astro", "blogging", "learning in public"]
 ---
 
-## h2 Heading
+# h1 Heading 8-)
 
 <h1>Hello World!</h1>
  
 <p>👋 Hi, I love emojis a lot 🤓</p>
+## h2 Heading
 
 ### h3 Heading
 
