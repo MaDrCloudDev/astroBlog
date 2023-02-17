@@ -1,9 +1,19 @@
 ---
+import ThemeIcon from "./ThemeIcon.astro";
 ---
 
-<div class='nav-links'>
-	<a href='/'>Home</a>
-	<a href='/about/'>About</a>
-	<a href='/blog/'>Blog</a>
-	<a href='/tags/'>Tags</a>
+<div class='flex text-2xl justify-between'>
+	<div class='flex p-2 gap-4'>
+		<a
+			class='p-2 px-4 gap-6 hover:bg-[#fffb00] hover:text-black'
+			href='/'
+			>Blog</a
+		>
+		<a
+			class='p-2 px-4 gap-6 hover:bg-[#fffb00] hover:text-black'
+			href='/tags/'
+			>Tags</a
+		>
+	</div>
+	<ThemeIcon />
 </div>
