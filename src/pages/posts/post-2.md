@@ -14,6 +14,9 @@ tags: ["astro", "blogging", "learning in public", "successes"]
 
 Paragraphs are separated by a blank line.
 
+<h1>Hello World!</h1>
+ 
+<p>👋 Hi, I love emojis a lot 🤓</p>
 2nd paragraph. _Italic_, **bold**, and `monospace`. Itemized lists
 look like:
 

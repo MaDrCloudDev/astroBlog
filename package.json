@@ -19,6 +19,7 @@
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.9"
+    "@tailwindcss/typography": "^0.5.9",
+    "rehype-accessible-emojis": "^0.3.2"
   }
 }

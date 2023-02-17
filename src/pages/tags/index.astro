@@ -9,7 +9,7 @@ const pageTitle = "Tag Index";
 	<div class='tags flex flex-wrap p-4'>
 		{
 			tags.map((tag) => (
-				<p class='tag flex'>
+				<p class='tag flex whitespace-nowrap'>
 					<a
 						class='p-2 px-4 text-xl mx-1 my-1 font-medium border gap-6 hover:bg-[#328eef]'
 						href={`/tags/${tag}`}>

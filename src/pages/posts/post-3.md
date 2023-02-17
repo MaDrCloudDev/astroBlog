@@ -12,6 +12,9 @@ tags: ["astro", "blogging", "learning in public"]
 
 # h1 Heading 8-)
 
+<h1>Hello World!</h1>
+ 
+<p>👋 Hi, I love emojis a lot 🤓</p>
 ## h2 Heading
 
 ### h3 Heading

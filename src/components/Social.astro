@@ -3,7 +3,7 @@ const { platform, username } = Astro.props;
 ---
 
 <a
-	class='mb-4 ml-1 px-4 py-2 bg-[#328eef] hover:bg-[#fffb00] text-black'
+	class='mb-4 ml-1 px-3 py-2 bg-[#328eef] hover:bg-[#fffb00] text-black'
 	href={`https://www.${platform}/${username}`}
 	>{platform.substring(0, platform.indexOf("."))}</a
 >
