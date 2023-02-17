@@ -2,20 +2,20 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 const allPosts = await Astro.glob("../posts/*.md");
 const tags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
-const pageTitle = "Tags";
+const pageTitle = "Tag Index";
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
 	<div class='tags flex flex-wrap'>
 		{
 			tags.map((tag) => (
-				<div class='tag flex'>
+				<p class='tag flex'>
 					<a
-						class=' p-2 px-4 text-xl mx-1 my-1 font-medium border gap-6 hover:bg-[#328eef]'
+						class='p-2 px-4 text-xl mx-1 my-1 font-medium border gap-6 hover:bg-[#328eef]'
 						href={`/tags/${tag}`}>
 						{tag}
 					</a>
-				</div>
+				</p>
 			))
 		}
 	</div>
