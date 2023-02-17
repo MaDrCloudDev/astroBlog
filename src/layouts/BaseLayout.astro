@@ -1,6 +1,6 @@
 ---
-import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 import "../styles/global.css";
 const { pageTitle } = Astro.props;
 ---
@@ -24,7 +24,7 @@ const { pageTitle } = Astro.props;
 		<title>{pageTitle}</title>
 	</head>
 	<body class='max-w-2xl mx-auto justify-center'>
-		<Header />
+		<Navigation />
 		<slot />
 		<Footer />
 		<script>

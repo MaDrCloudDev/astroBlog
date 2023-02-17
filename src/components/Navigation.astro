@@ -3,7 +3,14 @@ import ThemeIcon from "./ThemeIcon.astro";
 ---
 
 <div class='flex text-2xl justify-between'>
-	<div class='flex p-2 gap-4'>
+	<!-- <div class='mt-[1.2rem]'>
+		<div class='hamburger group'>
+			<span class='line bg-white group-hover:bg-[#328eef]'></span>
+			<span class='line bg-white group-hover:bg-[#328eef]'></span>
+			<span class='line bg-white group-hover:bg-[#328eef]'></span>
+		</div>
+	</div> -->
+	<div class='flex p-2 gap-4 mt-2'>
 		<a
 			class='p-2 px-4 gap-6 hover:bg-[#fffb00] hover:text-black'
 			href='/'
@@ -15,5 +22,7 @@ import ThemeIcon from "./ThemeIcon.astro";
 			>Tags</a
 		>
 	</div>
-	<ThemeIcon />
+	<div class='mt-[1.6rem] mr-6'>
+		<ThemeIcon />
+	</div>
 </div>

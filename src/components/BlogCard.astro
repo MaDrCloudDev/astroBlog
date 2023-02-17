@@ -5,7 +5,8 @@ const { title, url } = Astro.props;
 <a
 	class='group aspect-video hover:!text-default'
 	href={url}>
-	<figure class='relative h-full w-full overflow-hidden'>
+	<figure
+		class='relative h-full w-full overflow-hidden px-6 py-2 hover:accent-[#328eef]'>
 		<img
 			class='object-cover w-full h-full transition-all duration-300 bg-cover group-hover:scale-110 group-hover:opacity-20 group-focus:scale-110 group-focus:opacity-20'
 			src='https://raw.githubusercontent.com/MaDrCloudDev/projectsImages/master/accessiblereacttodo.webp'
@@ -14,8 +15,14 @@ const { title, url } = Astro.props;
 		<figcaption class='absolute inset-0'>
 			<div
 				class='flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100'>
-				<h3 class='text-center font-extrabold uppercase text-xl'>{title}</h3>
-				<p class='border border-current px-4 py-2'>Read</p>
+				<h3
+					class='text-center font-extrabold uppercase text-xl mb-2 text-[#328eef]'>
+					{title}
+				</h3>
+				<p
+					class='border border-current px-4 py-2 text-[#fffb00] text-lg animate-bounce'>
+					Read
+				</p>
 			</div>
 		</figcaption>
 	</figure>
