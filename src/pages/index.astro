@@ -2,11 +2,11 @@
 import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogCard from "../components/BlogCard.astro";
-const pageTitle = "Blog";
+const pageTitle = "MaDr | Blog";
 const allPosts = await getCollection("posts");
 ---
 
-<BaseLayout>
+<BaseLayout pageTitle={pageTitle}>
 	<ul>
 		{
 			allPosts.map((post) => (

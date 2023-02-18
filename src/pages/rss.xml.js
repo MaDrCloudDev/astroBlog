@@ -1,6 +1,8 @@
 import rss, { pagesGlobToRssItems } from "@astrojs/rss";
+import { getCollection } from "astro:content";
 
 export async function get() {
+	const posts = await getCollection("posts");
 	return rss({
 		title: "MaDr | Blog",
 		description: "Personal blog of MaDr",
