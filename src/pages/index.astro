@@ -11,7 +11,7 @@ const allPosts = await Astro.glob("../pages/posts/*.md");
 			allPosts.map((post) => (
 				<>
 					<div>
-						<div class='ml-6 mt-2 text-white absolute pointer-events-none z-10 pr-0 mr-0 w-[12rem] text-lg sm:text-xl font-bold bg-black bg-opacity-50 h-fit'>
+						<div class='ml-6 mt-2 text-white absolute pointer-events-none z-10 pr-0 mr-0 w-[12rem] text-lg sm:text-xl font-bold bg-black bg-opacity-50 h-fit overflow-x-hidden'>
 							<p class='text-[#fffb00] font-bold text-xl sm:text-2xl'>
 								{post.frontmatter.title}
 							</p>
