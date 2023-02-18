@@ -15,14 +15,14 @@ const { title, url, link } = Astro.props;
 		<figcaption class='absolute inset-0'>
 			<div
 				class='flex h-full flex-col items-center justify-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100 group-focus:opacity-100'>
-				<h3
-					class='ml-[16rem] mb-[2rem] text-center bg-black rounded-full bg-opacity-60 p-2 font-extrabold uppercase text-xl text-[#328eef]'>
-					{title}
-				</h3>
 				<p
-					class='border-4 font-bold border-current px-4 py-2 bg-black text-[#328eef] dark:text-[#fffb00] text-lg animate-bounce'>
+					class='hidden sm:block mt-[10rem] border-4 font-bold border-current px-4 py-2 bg-black text-[#328eef] dark:text-[#fffb00] text-lg animate-bounce'>
 					Read
 				</p>
+				<h3
+					class='hidden sm:block text-center bg-black rounded-full bg-opacity-60 p-2 font-extrabold uppercase text-xl text-[#328eef]'>
+					{title}
+				</h3>
 			</div>
 		</figcaption>
 	</figure>
