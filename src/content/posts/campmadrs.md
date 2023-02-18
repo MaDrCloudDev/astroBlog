@@ -1,14 +1,23 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "weHadLeftTheGround"
-link: "/posts/wehadlefttheground"
+title: "campMaDrs"
+link: "/posts/campmadrs"
 author: "MaDr"
-description: "My open-source, interactive CSS + JS poem"
+description: "A full-stack application I developed using MongoDB, Mongoose, Express, Node.js, EJS, Bootstrap, Passport, Cloudinary, & Mapbox - that allows users to find campgrounds, or sign up & upload their own. CRUD & RESTful routes"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wehadlefttheground_lkgkkt.webp"
-  alt: "weHadLeftTheGround project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/campmadrs_d5ztba.webp"
+  alt: "campMaDrs project image"
 pubDate: 2023-01-03
-tags: ["css", "html", "javascript"]
+tags:
+  [
+    "bootstrap",
+    "cloudinary",
+    "ejs",
+    "express",
+    "mapbox",
+    "mongodb",
+    "nodejs",
+    "passport",
+  ]
 ---
 
 # An h1 header

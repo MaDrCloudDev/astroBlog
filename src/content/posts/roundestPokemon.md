@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "astroSharedState"
-link: "/posts/astrosharedstate"
+title: "roundestPokemon"
+link: "/posts/roundestpokemon"
 author: "MaDr"
-description: "Simple React, SolidJS, Svelte, & Vue counter components with state & shared state in Astro"
+description: "An polling app I built where users vote to determine which Pokemon is the roundest, based on roundest-mon from t3dotgg's stream"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1675528046/astrosharedstate_i6aiww.webp"
-  alt: "astroSharedState project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1676254227/roundestpokemon_ugmgon.webp"
+  alt: "roundestPokemon project image"
 pubDate: 2023-01-03
-tags: ["astro", "react", "solidjs", "svelte", "vue", "alpinejs"]
+tags: ["nextjs", "typescript", "trpc", "prisma", "planetscale", "tailwindcss"]
 ---
 
 # An h1 header

@@ -5,7 +5,12 @@ export async function get() {
 		title: "MaDr | Blog",
 		description: "Personal blog of MaDr",
 		site: "https://madr.blog/",
-		items: await pagesGlobToRssItems(import.meta.glob("./**/*.md")),
+		items: posts.map((post) => ({
+			title: post.data.title,
+			pubDate: post.data.pubDate,
+			description: post.data.description,
+			link: `/posts/${post.slug}/`,
+		})),
 		customData: `<language>en-us</language>`,
 	});
 }

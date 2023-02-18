@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "callingCard"
-link: "/posts/callingcard"
+title: "todoApp"
+link: "/posts/todoApp"
 author: "MaDr"
-description: "My modern calling-card contact site using the cool 3D parallax effect from the header of Astro's official site"
+description: "My todo app I built using HTML, CSS, JavaScript, Babel, & Webpack"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/callingcard_bmjbuo.webp"
-  alt: "callingCard"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/madrtodoapp_zmlnqj.webp"
+  alt: "todoApp project image"
 pubDate: 2023-01-03
-tags: ["astro"]
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

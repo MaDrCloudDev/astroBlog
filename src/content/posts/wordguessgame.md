@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: "wordGuessGame"
 link: "/posts/wordguessgame"
 author: "MaDr"

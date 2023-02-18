@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "goalsMaDr"
-link: "/posts/goalsmadr"
+title: "simpleContactSite"
+link: "/posts/simplecontactsite"
 author: "MaDr"
-description: "A full-stack app I built to help users save & track their goals, developed with MongoDB, Express, React, & Node.js. Mongoose & Axios. CRUD, REST API, & Redux for state management"
+description: "My simple CSS contact site for developers who don't blog, or who don't want to put up a full website, built with HTML, CSS, & Vanta.js"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/goalsmadr_lol3t0.webp"
-  alt: "goalsMaDr project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/simplecontactsite_xnm1vn.webp"
+  alt: "simpleContactSite project image"
 pubDate: 2023-01-03
-tags: ["react", "express", "nodejs", "mongodb", "mongoose", "axios"]
+tags: ["css", "html", "javascript", "vantajs"]
 ---
 
 # An h1 header

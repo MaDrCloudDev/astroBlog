@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: "accessibleReactTodo"
 link: "/posts/accessiblereacttodo"
 pubDate: 2023-01-01

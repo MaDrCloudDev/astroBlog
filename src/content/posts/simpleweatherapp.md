@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "wixHoaSite"
-link: "/posts/wixhoasite"
+title: "simpleWeatherApp"
+link: "/posts/simpleweatherapp"
 author: "MaDr"
-description: "A Wix website I created for a local homeowner association"
+description: "An extremely simple, single-component weather app I built with React, plain CSS, & OpenWeatherMap API"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wixhoasite_snst0c.webp"
-  alt: "wixHoaSite project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763542/simpleweatherapp_avj5rz.webp"
+  alt: "simpleWeatherApp project image"
 pubDate: 2023-01-03
-tags: ["figma", "wix"]
+tags: ["css", "react"]
 ---
 
 # An h1 header

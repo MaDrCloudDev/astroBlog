@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "treeOfLinks"
-link: "/posts/treeoflinks"
-author: "MaDr"
-description: "My Linktree-style tree of links, built with Svelte & tsParticles"
+title: "astroConversion"
+link: "/posts/astroconversion"
+pubDate: 2023-01-01
+author: MaDr
+description: "A traditional HTML, CSS, and JS website converted into an Astro site using Astro components, layouts, pages, and blog"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/treeoflinks_hx2bfc.webp"
-  alt: "treeOfLinks project image"
-pubDate: 2023-01-03
-tags: ["svelte", "sveltekit", "tsparticles"]
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/astroconversion_bhhgis.webp"
+  alt: "astroConversion project image"
+tags: ["astro"]
 ---
 
 # An h1 header

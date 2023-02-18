@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "astroConversion"
-link: "/posts/astroconversion"
-pubDate: 2023-01-01
-author: MaDr
-description: "A traditional HTML, CSS, and JS website converted into an Astro site using Astro components, layouts, pages, and blog"
+title: "vectorDesign"
+link: "/posts/vectordesign"
+author: "MaDr"
+description: "Some of my vectorization & vector design samples"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/astroconversion_bhhgis.webp"
-  alt: "astroConversion project image"
-tags: ["astro"]
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/vectordesign_fxsrhy.webp"
+  alt: "vectorDesign project image"
+pubDate: 2023-01-03
+tags: ["figma"]
 ---
 
 # An h1 header

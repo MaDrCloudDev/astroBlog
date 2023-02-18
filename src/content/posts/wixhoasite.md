@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "t3StackList"
-link: "/posts/t3stacklist"
+title: "wixHoaSite"
+link: "/posts/wixhoasite"
 author: "MaDr"
-description: "My simple full-stack list built with Next.js, TypeScript, Tailwind, & tRPC (T3 Stack). Prisma & PlanetScale, w/ Framer Motion"
+description: "A Wix website I created for a local homeowner association"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill//v1673763542/t3stacklist_uudirm.webp"
-  alt: "t3StackList project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wixhoasite_snst0c.webp"
+  alt: "wixHoaSite project image"
 pubDate: 2023-01-03
-tags: ["nextjs", "prisma", "planetscale", "tailwindcss", "trpc", "typescript"]
+tags: ["figma", "wix"]
 ---
 
 # An h1 header

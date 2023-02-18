@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: "astroDocumentationTheme"
 link: /posts/astrodocumentationtheme
 pubDate: 2023-01-01

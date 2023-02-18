@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props;
 
 <BaseLayout pageTitle={frontmatter.title}>
 	<div class='flex flex-col text-center'>
-		<p>{frontmatter.pubDate.slice(0, 10)}</p>
+		<p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
 		<h2 class='text-xl font-bold'><em>{frontmatter.description}</em></h2>
 		<p>Written by: {frontmatter.author}</p>
 		<div class='flex justify-center'>

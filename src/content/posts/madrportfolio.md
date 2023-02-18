@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "todoApp"
-link: "/posts/todoApp"
-author: "MaDr"
-description: "My todo app I built using HTML, CSS, JavaScript, Babel, & Webpack"
+title: "MaDrPortfolio"
+link: "/posts/madrportfolio"
+pubDate: 2023-01-01
+author: "MaDrCloudDev"
+description: "My modern visual portfolio built with SvelteKit, Prisma, PlanetScale, & Tailwind"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/madrtodoapp_zmlnqj.webp"
-  alt: "todoApp project image"
-pubDate: 2023-01-03
-tags: ["css", "html", "javascript"]
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673802674/madrportfolio_pl3svm.webp"
+  alt: "MaDrPortfolio projects image"
+tags: ["sveltekit", "svelte", "prisma", "planetscale", "tailwindcss"]
 ---
 
 # An h1 header

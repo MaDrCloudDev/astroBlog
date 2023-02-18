@@ -1,24 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "campMaDrs"
-link: "/posts/campmadrs"
+title: "movieWebsite"
+link: "/posts/moviewebsite"
 author: "MaDr"
-description: "A full-stack application I developed using MongoDB, Mongoose, Express, Node.js, EJS, Bootstrap, Passport, Cloudinary, & Mapbox - that allows users to find campgrounds, or sign up & upload their own. CRUD & RESTful routes"
+description: "A simple full-stack Netflix clone I built using React, Talwind, Axios, Firebase, & The Movie Database API"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/campmadrs_d5ztba.webp"
-  alt: "campMaDrs project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/moviewebsite_yj77jp.webp"
+  alt: "movieWebsite project image"
 pubDate: 2023-01-03
-tags:
-  [
-    "bootstrap",
-    "cloudinary",
-    "ejs",
-    "express",
-    "mapbox",
-    "mongodb",
-    "nodejs",
-    "passport",
-  ]
+tags: ["firebase", "react", "tailwind"]
 ---
 
 # An h1 header

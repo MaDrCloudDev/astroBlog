@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "simpleWeatherApp"
-link: "/posts/simpleweatherapp"
+title: "treeOfLinks"
+link: "/posts/treeoflinks"
 author: "MaDr"
-description: "An extremely simple, single-component weather app I built with React, plain CSS, & OpenWeatherMap API"
+description: "My Linktree-style tree of links, built with Svelte & tsParticles"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763542/simpleweatherapp_avj5rz.webp"
-  alt: "simpleWeatherApp project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/treeoflinks_hx2bfc.webp"
+  alt: "treeOfLinks project image"
 pubDate: 2023-01-03
-tags: ["css", "react"]
+tags: ["svelte", "sveltekit", "tsparticles"]
 ---
 
 # An h1 header

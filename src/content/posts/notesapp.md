@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "MaDrPortfolio"
-link: "/posts/madrportfolio"
-pubDate: 2023-01-01
-author: "MaDrCloudDev"
-description: "My modern visual portfolio built with SvelteKit, Prisma, PlanetScale, & Tailwind"
+title: "notesApp"
+link: "/posts/notesApp"
+author: "MaDr"
+description: "My notes app I built using HTML, CSS, JavaScript, Moment.js, Babel, & Webpack"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673802674/madrportfolio_pl3svm.webp"
-  alt: "MaDrPortfolio projects image"
-tags: ["sveltekit", "svelte", "prisma", "planetscale", "tailwindcss"]
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/madrnotesapp_edtk40.webp"
+  alt: "notesApp project image"
+pubDate: 2023-01-03
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

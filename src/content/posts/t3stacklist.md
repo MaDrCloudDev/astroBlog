@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "vectorDesign"
-link: "/posts/vectordesign"
+title: "t3StackList"
+link: "/posts/t3stacklist"
 author: "MaDr"
-description: "Some of my vectorization & vector design samples"
+description: "My simple full-stack list built with Next.js, TypeScript, Tailwind, & tRPC (T3 Stack). Prisma & PlanetScale, w/ Framer Motion"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/vectordesign_fxsrhy.webp"
-  alt: "vectorDesign project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill//v1673763542/t3stacklist_uudirm.webp"
+  alt: "t3StackList project image"
 pubDate: 2023-01-03
-tags: ["figma"]
+tags: ["nextjs", "prisma", "planetscale", "tailwindcss", "trpc", "typescript"]
 ---
 
 # An h1 header

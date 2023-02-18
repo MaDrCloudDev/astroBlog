@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "movieWebsite"
-link: "/posts/moviewebsite"
+title: "weHadLeftTheGround"
+link: "/posts/wehadlefttheground"
 author: "MaDr"
-description: "A simple full-stack Netflix clone I built using React, Talwind, Axios, Firebase, & The Movie Database API"
+description: "My open-source, interactive CSS + JS poem"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/moviewebsite_yj77jp.webp"
-  alt: "movieWebsite project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wehadlefttheground_lkgkkt.webp"
+  alt: "weHadLeftTheGround project image"
 pubDate: 2023-01-03
-tags: ["firebase", "react", "tailwind"]
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "notesApp"
-link: "/posts/notesApp"
+title: "goalsMaDr"
+link: "/posts/goalsmadr"
 author: "MaDr"
-description: "My notes app I built using HTML, CSS, JavaScript, Moment.js, Babel, & Webpack"
+description: "A full-stack app I built to help users save & track their goals, developed with MongoDB, Express, React, & Node.js. Mongoose & Axios. CRUD, REST API, & Redux for state management"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/madrnotesapp_edtk40.webp"
-  alt: "notesApp project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/goalsmadr_lol3t0.webp"
+  alt: "goalsMaDr project image"
 pubDate: 2023-01-03
-tags: ["css", "html", "javascript"]
+tags: ["react", "express", "nodejs", "mongodb", "mongoose", "axios"]
 ---
 
 # An h1 header

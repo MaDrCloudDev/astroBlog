@@ -1,14 +1,13 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
-title: "simpleContactSite"
-link: "/posts/simplecontactsite"
+title: "callingCard"
+link: "/posts/callingcard"
 author: "MaDr"
-description: "My simple CSS contact site for developers who don't blog, or who don't want to put up a full website, built with HTML, CSS, & Vanta.js"
+description: "My modern calling-card contact site using the cool 3D parallax effect from the header of Astro's official site"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/simplecontactsite_xnm1vn.webp"
-  alt: "simpleContactSite project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/callingcard_bmjbuo.webp"
+  alt: "callingCard"
 pubDate: 2023-01-03
-tags: ["css", "html", "javascript", "vantajs"]
+tags: ["astro"]
 ---
 
 # An h1 header
