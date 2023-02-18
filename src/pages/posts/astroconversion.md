@@ -2,13 +2,13 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "astroConversion"
 link: "/posts/astroconversion"
+pubDate: 2023-01-01
 author: MaDr
-description: "After learning some Astro, I couldn't stop!"
+description: "A traditional HTML, CSS, and JS website converted into an Astro site using Astro components, layouts, pages, and blog"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/astroconversion_bhhgis.webp"
-  alt: "Astro thumbnail"
-pubDate: 2023-01-02
-tags: ["astro", "blogging", "learning in public", "successes"]
+  alt: "astroConversion project image"
+tags: ["astro"]
 ---
 
 # An h1 header

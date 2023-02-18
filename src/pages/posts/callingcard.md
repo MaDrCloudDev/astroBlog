@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "callingCard"
 link: "/posts/callingcard"
 author: "MaDr"
-description: "I love Astro!"
+description: "My modern calling-card contact site using the cool 3D parallax effect from the header of Astro's official site"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/callingcard_bmjbuo.webp"
-  alt: "Astro thumbnail"
+  alt: "callingCard"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["astro"]
 ---
 
 # An h1 header

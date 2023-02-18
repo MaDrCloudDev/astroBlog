@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "roundestPokemon"
 link: "/posts/roundestpokemon"
 author: "MaDr"
-description: "I love Astro!"
+description: "An polling app I built where users vote to determine which Pokemon is the roundest, based on roundest-mon from t3dotgg's stream"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1676254227/roundestpokemon_ugmgon.webp"
-  alt: "Astro thumbnail"
+  alt: "roundestPokemon project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["nextjs", "typescript", "trpc", "prisma", "planetscale", "tailwindcss"]
 ---
 
 # An h1 header

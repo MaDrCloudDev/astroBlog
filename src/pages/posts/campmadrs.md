@@ -3,12 +3,22 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "campMaDrs"
 link: "/posts/campmadrs"
 author: "MaDr"
-description: "I love Astro!"
+description: "A full-stack application I developed using MongoDB, Mongoose, Express, Node.js, EJS, Bootstrap, Passport, Cloudinary, & Mapbox - that allows users to find campgrounds, or sign up & upload their own. CRUD & RESTful routes"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/campmadrs_d5ztba.webp"
-  alt: "Astro thumbnail"
+  alt: "campMaDrs project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags:
+  [
+    "bootstrap",
+    "cloudinary",
+    "ejs",
+    "express",
+    "mapbox",
+    "mongodb",
+    "nodejs",
+    "passport",
+  ]
 ---
 
 # An h1 header

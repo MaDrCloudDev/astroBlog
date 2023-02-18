@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "simpleContactSite"
 link: "/posts/simplecontactsite"
 author: "MaDr"
-description: "I love Astro!"
+description: "My simple CSS contact site for developers who don't blog, or who don't want to put up a full website, built with HTML, CSS, & Vanta.js"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/simplecontactsite_xnm1vn.webp"
-  alt: "Astro thumbnail"
+  alt: "simpleContactSite project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["css", "html", "javascript", "vantajs"]
 ---
 
 # An h1 header

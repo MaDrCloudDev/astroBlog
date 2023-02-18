@@ -30,7 +30,8 @@ const { posts } = Astro.props;
 		{
 			posts.map((post) => (
 				<BlogCard
-					url={post.url}
+					link={post.frontmatter.link}
+					url={post.frontmatter.image.url}
 					title={post.frontmatter.title}
 				/>
 			))

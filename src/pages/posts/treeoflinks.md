@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "treeOfLinks"
 link: "/posts/treeoflinks"
 author: "MaDr"
-description: "I love Astro!"
+description: "My Linktree-style tree of links, built with Svelte & tsParticles"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/treeoflinks_hx2bfc.webp"
-  alt: "Astro thumbnail"
+  alt: "treeOfLinks project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["svelte", "sveltekit", "tsparticles"]
 ---
 
 # An h1 header

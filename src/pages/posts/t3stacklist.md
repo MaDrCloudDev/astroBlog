@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "t3StackList"
 link: "/posts/t3stacklist"
 author: "MaDr"
-description: "I love Astro!"
+description: "My simple full-stack list built with Next.js, TypeScript, Tailwind, & tRPC (T3 Stack). Prisma & PlanetScale, w/ Framer Motion"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill//v1673763542/t3stacklist_uudirm.webp"
-  alt: "Astro thumbnail"
+  alt: "t3StackList project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["nextjs", "prisma", "planetscale", "tailwindcss", "trpc", "typescript"]
 ---
 
 # An h1 header

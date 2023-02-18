@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "goalsMaDr"
 link: "/posts/goalsmadr"
 author: "MaDr"
-description: "I love Astro!"
+description: "A full-stack app I built to help users save & track their goals, developed with MongoDB, Express, React, & Node.js. Mongoose & Axios. CRUD, REST API, & Redux for state management"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/goalsmadr_lol3t0.webp"
-  alt: "Astro thumbnail"
+  alt: "goalsMaDr project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["react", "express", "nodejs", "mongodb", "mongoose", "axios"]
 ---
 
 # An h1 header

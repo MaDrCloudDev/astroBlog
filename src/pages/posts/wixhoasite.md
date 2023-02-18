@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "wixHoaSite"
 link: "/posts/wixhoasite"
 author: "MaDr"
-description: "I love Astro!"
+description: "A Wix website I created for a local homeowner association"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wixhoasite_snst0c.webp"
-  alt: "Astro thumbnail"
+  alt: "wixHoaSite project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["figma", "wix"]
 ---
 
 # An h1 header

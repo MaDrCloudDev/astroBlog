@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "accessibleReactTodo"
 link: "/posts/accessiblereacttodo"
 pubDate: 2023-01-01
-description: "My first post."
 author: "MaDrCloudDev"
+description: "An accessible React todo UI I built using React hooks"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/accessiblereacttodo_vlokwc.webp"
-  alt: "Astro logo"
-tags: ["astro", "blogging", "learning in public"]
+  alt: "accessibleReactTodo projects image"
+tags: ["React"]
 ---
 
 ## h2 Heading

@@ -2,13 +2,13 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: "MaDrPortfolio"
 link: "/posts/madrportfolio"
-author: "MaDr"
-description: "I love Astro!"
+pubDate: 2023-01-01
+author: "MaDrCloudDev"
+description: "My modern visual portfolio built with SvelteKit, Prisma, PlanetScale, & Tailwind"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673802674/madrportfolio_pl3svm.webp"
-  alt: "Astro thumbnail"
-pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+  alt: "MaDrPortfolio projects image"
+tags: ["sveltekit", "svelte", "prisma", "planetscale", "tailwindcss"]
 ---
 
 # An h1 header

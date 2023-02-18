@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "wordGuessGame"
 link: "/posts/wordguessgame"
 author: "MaDr"
-description: "I love Astro!"
+description: "My Hangman-style word guess game I built using HTML, CSS, JavaScript,Babel, & Webpack"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763543/madrwordguessgame_qffdgf.webp"
-  alt: "Astro thumbnail"
+  alt: "wordGuessGame project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

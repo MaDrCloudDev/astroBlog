@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "weHadLeftTheGround"
 link: "/posts/wehadlefttheground"
 author: "MaDr"
-description: "I love Astro!"
+description: "My open-source, interactive CSS + JS poem"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/wehadlefttheground_lkgkkt.webp"
-  alt: "Astro thumbnail"
+  alt: "weHadLeftTheGround project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

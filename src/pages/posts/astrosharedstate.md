@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "astroSharedState"
 link: "/posts/astrosharedstate"
 author: "MaDr"
-description: "I love Astro!"
+description: "Simple React, SolidJS, Svelte, & Vue counter components with state & shared state in Astro"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1675528046/astrosharedstate_i6aiww.webp"
-  alt: "Astro thumbnail"
+  alt: "astroSharedState project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["astro", "react", "solidjs", "svelte", "vue", "alpinejs"]
 ---
 
 # An h1 header

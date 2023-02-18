@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "simpleWeatherApp"
 link: "/posts/simpleweatherapp"
 author: "MaDr"
-description: "I love Astro!"
+description: "An extremely simple, single-component weather app I built with React, plain CSS, & OpenWeatherMap API"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763542/simpleweatherapp_avj5rz.webp"
-  alt: "Astro thumbnail"
+  alt: "simpleWeatherApp project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["css", "react"]
 ---
 
 # An h1 header

@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "movieWebsite"
 link: "/posts/moviewebsite"
 author: "MaDr"
-description: "I love Astro!"
+description: "A simple full-stack Netflix clone I built using React, Talwind, Axios, Firebase, & The Movie Database API"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763544/moviewebsite_yj77jp.webp"
-  alt: "Astro thumbnail"
+  alt: "movieWebsite project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["firebase", "react", "tailwind"]
 ---
 
 # An h1 header

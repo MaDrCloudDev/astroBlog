@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "notesApp"
 link: "/posts/notesApp"
 author: "MaDr"
-description: "I love Astro!"
+description: "My notes app I built using HTML, CSS, JavaScript, Moment.js, Babel, & Webpack"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763540/madrnotesapp_edtk40.webp"
-  alt: "Astro thumbnail"
+  alt: "notesApp project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["css", "html", "javascript"]
 ---
 
 # An h1 header

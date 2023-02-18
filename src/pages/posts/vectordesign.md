@@ -3,12 +3,12 @@ layout: ../../layouts/MarkdownPostLayout.astro
 title: "vectorDesign"
 link: "/posts/vectordesign"
 author: "MaDr"
-description: "I love Astro!"
+description: "Some of my vectorization & vector design samples"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/vectordesign_fxsrhy.webp"
-  alt: "Astro thumbnail"
+  alt: "vectorDesign project image"
 pubDate: 2023-01-03
-tags: ["astro", "blogging", "learning in public", "successes"]
+tags: ["figma"]
 ---
 
 # An h1 header
