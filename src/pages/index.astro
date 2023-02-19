@@ -11,7 +11,7 @@ const allPosts = await getCollection("posts");
 		{
 			allPosts.map((post) => (
 				<>
-					<div>
+					<li>
 						<div class='ml-8 mt-4 p-2 text-white absolute pointer-events-none z-10 pr-0 mr-0 w-[60%] sm:w-[30%] text-lg sm:text-xl font-bold bg-black bg-opacity-50 h-fit'>
 							<p class='text-[#fffb00] font-bold text-xl sm:text-2xl'>
 								{post.data.title}
@@ -23,7 +23,7 @@ const allPosts = await getCollection("posts");
 							url={post.data.image.url}
 							title={post.data.title}
 						/>
-					</div>
+					</li>
 				</>
 			))
 		}
