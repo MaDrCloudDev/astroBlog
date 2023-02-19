@@ -121,9 +121,9 @@ Right aligned columns
 
 ## Links
 
-[link text](http://dev.nodeca.com)
+[link text](http://www.github..com/madrclouddev/)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[link with title](http://www.github..com/madrclouddev/ "title text!")
 
 Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
 
@@ -144,7 +144,7 @@ With a reference later in the document defining the URL location:
 
 👋 🤓
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+### Footnotes
 
 Footnote 1 link[^first].
 
