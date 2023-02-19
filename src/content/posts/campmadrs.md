@@ -135,8 +135,6 @@ Right aligned columns
 
 [link with title](http://www.github..com/madrclouddev/ "title text!")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
