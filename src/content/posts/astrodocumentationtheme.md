@@ -7,7 +7,7 @@ description: "My old projects documentation site, built with Astro"
 image:
   url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763541/astrodocumentationtheme_m5e5qf.webp"
   alt: "astroDocumentationTheme project image"
-tags: ["astro", "blogging", "learning in public"]
+tags: ["astro"]
 ---
 
 # h1 Heading

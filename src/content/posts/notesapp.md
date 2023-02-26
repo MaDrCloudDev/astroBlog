@@ -1,6 +1,6 @@
 ---
 title: "notesApp"
-link: "/posts/notesApp"
+link: "/posts/notesapp"
 author: "MaDr"
 description: "My notes app I built using HTML, CSS, JavaScript, Moment.js, Babel, & Webpack"
 image:

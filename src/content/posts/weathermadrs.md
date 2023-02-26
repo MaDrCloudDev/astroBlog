@@ -1,13 +1,13 @@
 ---
-title: "simpleWeatherApp"
-link: "/posts/simpleweatherapp"
+title: "weatherMaDrs"
+link: "/posts/weathermadrs"
 author: "MaDr"
-description: "An extremely simple, single-component weather app I built with React, plain CSS, & OpenWeatherMap API"
+description: "A weather app I built using SvelteKit & OpenWeatherMap API"
 image:
-  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1673763542/simpleweatherapp_avj5rz.webp"
-  alt: "simpleWeatherApp project image"
+  url: "https://res.cloudinary.com/dcukxdjxc/image/upload/w_800,c_fill/v1677189914/weathermadrs_ty0ozq.webp"
+  alt: "weatherMaDrs project image"
 pubDate: 2023-01-03
-tags: ["css", "react"]
+tags: ["sveltekit", "openweathermapapi"]
 ---
 
 # h1 Heading
