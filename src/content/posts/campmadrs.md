@@ -151,15 +151,3 @@ With a reference later in the document defining the URL location:
 ### Emojies
 
 👋 🤓
-
-### Footnotes
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
