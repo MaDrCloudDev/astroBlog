@@ -3,7 +3,7 @@ const { platform, username } = Astro.props;
 ---
 
 <a
-	class='mb-4 ml-1 px-3 py-2 bg-[#328eef] hover:bg-[#fffb00] text-black'
+	class='mb-4 ml-1 px-3 py-2 bg-[#328eef] hover:bg-[#fffb00] dark:text-black hover:text-black text-white'
 	href={`https://www.${platform}/${username}`}
 	aria-label={`${platform.substring(0, platform.indexOf("."))} link`}
 	>{platform.substring(0, platform.indexOf("."))}</a
