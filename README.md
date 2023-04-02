@@ -5,3 +5,4 @@ npm i
 npm run dev
 npm run build
 ```
+Tailwind, RSS, Astro collections, all the good stuff. Uses Tailwind's Markdown solution. Working on a MDX version.
