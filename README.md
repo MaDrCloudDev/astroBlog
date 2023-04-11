@@ -1,4 +1,4 @@
-# [astroBlog](https://madr.blog/)
+# [astroBlog](https://blog.madr.io/)
 A simple Astro blog I built from scratch
 ```
 npm i
