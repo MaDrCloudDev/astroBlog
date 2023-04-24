@@ -27,11 +27,13 @@ const { pageTitle } = Astro.props;
 		/>
 		<title>{pageTitle}</title>
 	</head>
-	<body class='max-w-2xl mx-auto justify-center overflow-x-hidden'>
-		<header class='sticky top-0 z-50 bg-white dark:bg-black'>
-			<Navigation />
-		</header>
-		<slot />
+	<header class='sticky top-0 z-50 bg-white dark:bg-black'>
+		<Navigation />
+	</header>
+	<body class='overflow-x-hidden'>
+		<div class="max-w-5xl mx-auto">
+			<slot />
+		</div>
 		<Footer />
 	</body>
 </html>
