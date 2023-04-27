@@ -7,21 +7,21 @@ const imageUrl = frontmatter.image.url;
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
-	<div class='flex flex-col text-center'>
-		<p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
-		<h2 class='text-xl font-bold'><em>{frontmatter.description}</em></h2>
-		<p>Written by: {frontmatter.author}</p>
-		<div class='flex justify-center'>
-			<Image
-				src={imageUrl}
-				width={800}
-				aspectRatio={16 / 8}
-				format='webp'
-				alt={frontmatter.image.alt}
-			/>
-		</div>
-	</div>
-	<div class='prose dark:prose-invert p-4'>
-		<slot />
-	</div>
+  <div class="flex flex-col text-center">
+    <p>{frontmatter.pubDate.toString().slice(0, 10)}</p>
+    <h2 class="text-xl font-bold"><em>{frontmatter.description}</em></h2>
+    <p>Written by: {frontmatter.author}</p>
+    <div class="flex justify-center">
+      <Image
+        src={imageUrl}
+        width={1000}
+        aspectRatio={16 / 8}
+        format="webp"
+        alt={frontmatter.image.alt}
+      />
+    </div>
+  </div>
+  <div class="prose dark:prose-invert p-4 mx-auto max-w-5xl">
+    <slot />
+  </div>
 </BaseLayout>

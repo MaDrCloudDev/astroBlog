@@ -7,7 +7,7 @@ const allPosts = await getCollection("posts");
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <ul class="grid grid-cols-2">
+  <ul class="grid grid-cols-1 sm:grid-cols-2">
     {
       allPosts.map((post) => (
         <>
