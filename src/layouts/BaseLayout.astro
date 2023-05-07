@@ -17,7 +17,9 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <header class="sticky top-0 z-50 bg-white dark:bg-black">
+  <header
+    class="sticky top-0 z-50 bg-white dark:bg-black shadow-xl dark:shadow-slate-600 dark:shadow-lg"
+  >
     <Navigation />
   </header>
   <body class="overflow-x-hidden">
