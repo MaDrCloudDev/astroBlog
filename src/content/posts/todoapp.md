@@ -1,6 +1,6 @@
 ---
 title: "todoApp"
-link: "/posts/todoApp"
+link: "/posts/todoapp"
 author: "MaDr"
 description: "My todo app I built using HTML, CSS, JavaScript, Babel, & Webpack"
 image:
@@ -97,7 +97,7 @@ Syntax highlighting
 
 ```js
 var foo = function (bar) {
-	return bar++;
+  return bar++;
 };
 
 console.log(foo(5));
