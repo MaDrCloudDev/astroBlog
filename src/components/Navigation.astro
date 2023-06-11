@@ -1,25 +1,26 @@
 ---
-import ThemeIcon from "./ThemeIcon.astro";
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
-<div class="flex w-full justify-between p-2">
-  <div class="flex">
-    <a
-      class="py-2 pb-3 px-4 hover:bg-[#328eef] hover:text-white"
-      href="/"
-      aria-label="Blog home page link"><img src="/MaDrLogoSmall.svg" /></a
-    >
-    <div
-      class="flex flex-col justify-center hover:bg-[#328eef] hover:text-white"
-    >
-      <a
-        class="py-2 pb-3 px-4 font-bold text-2xl"
-        href="/tags/"
-        aria-label="Tags page link">Tags</a
-      >
-    </div>
-  </div>
-  <div class="flex flex-col justify-center cursor-pointer">
-    <ThemeIcon />
-  </div>
+<div class='flex w-full justify-between max-w-4xl p-2 mx-auto'>
+	<div class='flex'>
+		<a
+			class='py-2 pb-3 px-4 hover:bg-[#328eef] hover:text-white'
+			href='/'
+			aria-label='Blog home page link'
+			><img src='/MaDrLogoSmall.svg' /></a
+		>
+		<div
+			class='flex flex-col justify-center hover:bg-[#328eef] hover:text-white'>
+			<a
+				class='py-2 pb-3 px-4 font-bold text-2xl'
+				href='/tags/'
+				aria-label='Tags page link'
+				>Tags</a
+			>
+		</div>
+	</div>
+	<div class='flex flex-col justify-center cursor-pointer mr-4'>
+		<ThemeIcon />
+	</div>
 </div>
