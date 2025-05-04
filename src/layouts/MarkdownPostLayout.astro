@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 
 const { frontmatter } = Astro.props;
 const imageUrl = frontmatter.image.url;
@@ -15,7 +15,7 @@ const imageUrl = frontmatter.image.url;
       <Image
         src={imageUrl}
         width={1000}
-        aspectRatio={16 / 8}
+        height={500}
         format="webp"
         alt={frontmatter.image.alt}
       />

@@ -1,8 +1,6 @@
 ---
 const { title, url, link } = Astro.props;
-import { Image } from "@astrojs/image/components";
-
-const imageUrl = url;
+import { Image } from "astro:assets";
 ---
 
 <div>
@@ -17,9 +15,9 @@ const imageUrl = url;
       <Image
         class="object-cover w-full h-full transition-all duration-300 bg-cover group-hover:scale-105 group-hover:opacity-40 group-focus:scale-105 group-focus:opacity-40"
         width={800}
-        aspectRatio={16 / 8}
+        height={450}
         format="webp"
-        src={imageUrl}
+        src={url}
         alt={`${title} image`}
       />
       <figcaption class="absolute inset-0">

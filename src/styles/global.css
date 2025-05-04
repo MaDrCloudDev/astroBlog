@@ -1,8 +1,12 @@
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+@custom-variant dark (&:where(.dark, .dark *));
+
 .dark body {
-	background-color: black;
-	color: white;
+  background-color: black;
+  color: white;
 }
 
 .dark .nav-links a {
-	color: white;
+  color: white;
 }
