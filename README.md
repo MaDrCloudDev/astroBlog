@@ -1,4 +1,4 @@
-# [astroBlog](https://blog.madr.io/)
+# [astroBlog](https://astroblog.madr.io/)
 
 A simple Astro blog I built from scratch
 
