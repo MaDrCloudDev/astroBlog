@@ -1,31 +1,34 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogCard from "../components/BlogCard.astro";
-const pageTitle = "MaDr | Blog";
-const allPosts = await getCollection("posts");
+import { getAllPosts } from "../lib/content";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../lib/site";
+
+const posts = await getAllPosts();
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <ul class="grid grid-cols-1">
-    {
-      allPosts.map((post) => (
-        <>
-          <li>
-            <div class="ml-8 mt-4 p-2 text-white absolute pointer-events-none z-10 pr-0 mr-0 w-[60%] sm:w-[30%] text-lg sm:text-xl font-bold bg-black bg-opacity-50 h-fit">
-              <p class="text-[#fffb00] font-bold text-xl sm:text-2xl">
-                {post.data.title}
-              </p>
-              <p>{post.data.description.substring(0, 64)}...</p>
-            </div>
-            <BlogCard
-              link={post.data.link}
-              url={post.data.image.url}
-              title={post.data.title}
-            />
-          </li>
-        </>
-      ))
-    }
-  </ul>
+<BaseLayout
+	title={SITE_TITLE}
+	description={SITE_DESCRIPTION}>
+	<section class='mx-auto w-full max-w-4xl space-y-7'>
+		<header class='space-y-3'>
+			<p class='text-xs uppercase tracking-[0.2em] text-[#71717a] dark:text-[#a1a1aa]'>
+				Recent posts
+			</p>
+			<h1 class='text-3xl font-semibold leading-tight text-[#111111] dark:text-white sm:text-4xl'>
+				Projects, experiments, and build notes
+			</h1>
+			<p class='max-w-3xl text-base leading-relaxed text-[#52525b] dark:text-[#a1a1aa]'>
+				A curated feed of projects and frontend work, shared in a clean,
+				minimal format.
+			</p>
+		</header>
+		<ul class='grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8'>
+			{
+				posts.map((post) => (
+					<BlogCard post={post} />
+				))
+			}
+		</ul>
+	</section>
 </BaseLayout>

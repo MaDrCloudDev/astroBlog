@@ -1,16 +1,31 @@
 ---
-import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-const { pageTitle } = Astro.props;
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from "../lib/site";
+import "../styles/global.css";
+
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } =
+	Astro.props as Props;
+const canonicalUrl = new URL(Astro.url.pathname, SITE_URL);
 ---
 
-<html lang='en'>
+<html
+	lang='en'
+	class='dark'>
 	<head>
 		<meta charset='utf-8' />
 		<meta
 			name='description'
-			content='Personal blog of MaDr, MaDrCloudDev. Full-stack web developer.'
+			content={description}
+		/>
+		<link
+			rel='canonical'
+			href={canonicalUrl.href}
 		/>
 		<link
 			rel='icon'
@@ -19,20 +34,30 @@ const { pageTitle } = Astro.props;
 		/>
 		<meta
 			name='viewport'
-			content='width=device-width'
+			content='width=device-width, initial-scale=1'
 		/>
 		<meta
 			name='generator'
 			content={Astro.generator}
 		/>
-		<title>{pageTitle}</title>
+		<meta
+			name='theme-color'
+			content='#050505'
+		/>
+		<title>{title}</title>
 	</head>
 	<body class='overflow-x-hidden'>
-		<header
-			class='sticky top-0 z-50 bg-white dark:bg-black shadow-xl dark:shadow-slate-600 dark:shadow-lg'>
+		<a
+			href='#content'
+			class='sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-black focus:px-3 focus:py-2 focus:text-white'
+			>Skip to content</a
+		>
+		<header class='sticky top-0 z-40 border-b border-black/10 bg-white/90 backdrop-blur-md dark:border-white/10 dark:bg-black/80'>
 			<Navigation />
 		</header>
-		<main class='max-w-3xl p-2 mx-auto'>
+		<main
+			id='content'
+			class='mx-auto w-full max-w-5xl px-4 pb-14 pt-8 sm:px-6 sm:pt-10'>
 			<slot />
 		</main>
 		<Footer />

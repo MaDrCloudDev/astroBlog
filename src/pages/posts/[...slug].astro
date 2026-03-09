@@ -1,19 +1,19 @@
 ---
-import { getCollection } from "astro:content";
 import MarkdownPostLayout from "../../layouts/MarkdownPostLayout.astro";
+import { getAllPosts, type BlogPost } from "../../lib/content";
 
 export async function getStaticPaths() {
-	const blogEntries = await getCollection("posts");
-	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
-		props: { entry },
+	const posts = await getAllPosts();
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
 	}));
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { post } = Astro.props as { post: BlogPost };
+const { Content } = await post.render();
 ---
 
-<MarkdownPostLayout frontmatter={entry.data}>
+<MarkdownPostLayout post={post}>
 	<Content />
 </MarkdownPostLayout>

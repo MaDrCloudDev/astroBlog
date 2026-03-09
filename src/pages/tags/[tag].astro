@@ -1,41 +1,53 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogCard from "../../components/BlogCard.astro";
+import {
+	getAllPosts,
+	getPostsForTag,
+	getSortedTags,
+	type BlogPost,
+} from "../../lib/content";
 
 export async function getStaticPaths() {
-	const allPosts = await getCollection("posts");
+	const allPosts = await getAllPosts();
+	const allTags = getSortedTags(allPosts);
 
-	const uniqueTags = [
-		...new Set(allPosts.map((post) => post.data.tags).flat()),
-	];
-
-	return uniqueTags.map((tag) => {
-		const filteredPosts = allPosts.filter((post) =>
-			post.data.tags.includes(tag)
-		);
+	return allTags.map((tag) => {
+		const posts = getPostsForTag(allPosts, tag);
 		return {
 			params: { tag },
-			props: { posts: filteredPosts },
+			props: { posts },
 		};
 	});
 }
 
 const { tag } = Astro.params;
-const { posts } = Astro.props;
+const selectedTag = tag ?? "tag";
+const { posts } = Astro.props as { posts: BlogPost[] };
 ---
 
-<BaseLayout pageTitle={tag}>
-	<p class='ml-4 font-medium text-lg'>Tagged with: {tag}</p>
-	<ul>
+<BaseLayout title={`${selectedTag} | MaDr`}>
+	<section class='space-y-7'>
+		<header class='space-y-3'>
+			<a
+				class='inline-flex text-xs uppercase tracking-[0.2em] text-[#71717a] hover:text-black dark:text-[#a1a1aa] dark:hover:text-white'
+				href='/tags/'
+				>All tags</a
+			>
+			<h1 class='text-3xl font-semibold text-[#111111] dark:text-white sm:text-4xl'>
+				#{selectedTag}
+			</h1>
+			<p class='text-sm text-[#52525b] dark:text-[#a1a1aa]'>
+				{posts.length} {posts.length === 1 ? "post" : "posts"} tagged with
+				{` ${selectedTag}`}.
+			</p>
+		</header>
+		<ul class='grid grid-cols-1 gap-6 sm:gap-8'>
 		{
 			posts.map((post) => (
-				<BlogCard
-					link={post.data.link}
-					url={post.data.image.url}
-					title={post.data.title}
-				/>
+				<BlogCard post={post} />
 			))
 		}
-	</ul>
+		</ul>
+	</section>
 </BaseLayout>

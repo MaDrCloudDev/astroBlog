@@ -1,32 +1,31 @@
 ---
 import Social from "./Social.astro";
+import { SITE_URL, SOCIAL_LINKS } from "../lib/site";
+
+const currentYear = new Date().getFullYear();
+const rssUrl = `${SITE_URL}/rss.xml`;
 ---
 
-<style>
-	footer {
-		display: flex;
-		gap: 0.5rem;
-		margin-top: 2rem;
-	}
-</style>
-
-<footer class='ml-6 justify-between mb-8 whitespace-nowrap'>
-	<div>
-		<Social
-			platform='madr.io'
-			username=''
-		/>
-		<Social
-			platform='github.com'
-			username='madrclouddev'
-		/>
-	</div>
-	<div class='mr-7'>
-		<a
-			class='dark:hover:text-[#fffb00] hover:text-[#328eef]'
-			href='https://madr.blog/rss.xml'
-			aria-label='RSS feed link'
-			>RSS</a
-		>
+<footer class='mx-auto mt-4 w-full max-w-5xl border-t border-black/10 px-4 pb-10 pt-6 dark:border-white/10 sm:px-6'>
+	<div class='flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between'>
+		<div class='flex flex-wrap gap-2'>
+			{
+				SOCIAL_LINKS.map((social) => (
+					<Social
+						href={social.href}
+						label={social.label}
+					/>
+				))
+			}
+		</div>
+		<div class='flex items-center gap-4 text-xs uppercase tracking-[0.12em] text-[#71717a] dark:text-[#a1a1aa]'>
+			<a
+				class='font-semibold text-[#3f3f46] hover:text-black dark:text-[#d4d4d8] dark:hover:text-white'
+				href={rssUrl}
+				aria-label='Open RSS feed'
+				>RSS</a
+			>
+			<span>{currentYear}</span>
+		</div>
 	</div>
 </footer>

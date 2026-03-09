@@ -1,17 +1,18 @@
 import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
+import { getAllPosts, getPostUrl } from '../lib/content';
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL } from '../lib/site';
 
 export async function GET() {
-	const posts = await getCollection("posts");
+	const posts = await getAllPosts();
 	return rss({
-		title: "astroBlog | MaDr",
-		description: "A blog template I made for Astro",
-		site: "https://madr.blog/",
+		title: SITE_TITLE,
+		description: SITE_DESCRIPTION,
+		site: SITE_URL,
 		items: posts.map((post) => ({
 			title: post.data.title,
 			pubDate: post.data.pubDate,
 			description: post.data.description,
-			link: `/posts/${post.slug}/`,
+			link: getPostUrl(post),
 		})),
 		customData: `<language>en-us</language>`,
 	});

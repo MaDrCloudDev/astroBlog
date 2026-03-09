@@ -1,10 +1,16 @@
 ---
-const { platform, username } = Astro.props;
+interface Props {
+	href: string;
+	label: string;
+}
+
+const { href, label } = Astro.props as Props;
 ---
 
 <a
-	class='mb-4 ml-1 px-3 py-2 bg-[#328eef] hover:bg-[#fffb00] dark:text-black hover:text-black text-white'
-	href={`https://www.${platform}/${username}`}
-	aria-label={`${platform.substring(0, platform.indexOf("."))} link`}
-	>{platform.substring(0, platform.indexOf("."))}</a
+	class='inline-flex items-center rounded-full border border-black/10 px-3 py-1.5 text-xs font-medium uppercase tracking-[0.12em] text-[#1f1f1f] hover:border-black/30 hover:bg-black hover:text-white dark:border-white/15 dark:text-[#e4e4e7] dark:hover:border-white/30 dark:hover:bg-white dark:hover:text-black'
+	href={href}
+	aria-label={`Visit ${label}`}
+	rel='noopener noreferrer'
+	target='_blank'>{label}</a
 >

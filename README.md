@@ -1,99 +1,116 @@
-# Minimal Astro Blog Template
+# MaDr Blog
 
-A clean, fast blog template built with Astro and Tailwind CSS. Perfect for developers who want to get writing without dealing with unnecessary complexity.
+A dark-first Astro blog with markdown content, generated tag pages, RSS, sitemap support, and a minimal UI built with Tailwind CSS utilities.
 
-## Quick Start
+## Requirements
+
+- Node.js 20 LTS or newer
+- pnpm 10
+
+If you use Corepack:
+
+```bash
+corepack enable
+corepack prepare pnpm@latest --activate
+```
+
+## Quick start
 
 ```bash
 pnpm install
-pnpm run dev
+pnpm dev
 ```
 
-Open [http://localhost:4321](http://localhost:4321) to see your blog.
+Then open `http://localhost:4321`.
 
-## Features
-
-- **Fast & Modern**: Built with Astro for lightning-fast static generation
-- **Dark/Light Mode**: Automatic theme switching with system preference detection
-- **Type-Safe Content**: Astro Collections with full TypeScript support
-- **SEO Ready**: RSS feed, sitemap, and proper meta tags included
-- **Responsive Design**: Mobile-first design with Tailwind CSS
-- **Zero Bloat**: No unnecessary pages or features - just pure blogging
-
-## Project Structure
-
-```
-src/
-├── components/     # Reusable UI components
-├── content/        # Blog posts and content collections
-├── layouts/        # Page layouts
-├── pages/          # Routes and API endpoints
-└── styles/         # Global styles
-```
-
-## Writing Posts
-
-1. Add your markdown files to `src/content/posts/`
-2. Include required frontmatter:
-
-```markdown
----
-title: "Your Post Title"
-pubDate: 2024-01-01
-description: "Brief description of your post"
-author: "Your Name"
-image:
-  url: "/your-image.jpg"
-  alt: "Image description"
-tags: ["tag1", "tag2"]
-link: "/posts/your-post-slug"
----
-
-Your content here...
-```
-
-## Customization
-
-### Site Configuration
-
-Update `astro.config.mjs` with your domain:
-
-```js
-export default defineConfig({
-    site: 'https://yourdomain.com',
-    // ...
-});
-```
-
-### Styling
-
-- Global styles: `src/styles/global.css`
-- Component styles: Scoped CSS in `.astro` files
-- Tailwind classes: Available throughout the project
-
-### Content Schema
-
-Modify `src/content/config.ts` to add new fields or change validation rules.
-
-## Build & Deploy
+## Scripts
 
 ```bash
-pnpm run build
+pnpm dev          # start local dev server
+pnpm astro check  # Astro + TypeScript diagnostics
+pnpm build        # production build to dist/
+pnpm preview      # preview the production build
 ```
 
-Deploy the `dist/` folder to any static hosting service like Netlify, Vercel, or GitHub Pages.
+## Project layout
 
-## Why This Template?
+```text
+src/
+  components/         UI components (cards, nav, footer, theme toggle)
+  content/
+    config.ts         Content collection schema
+    posts/            Markdown posts
+  layouts/            Base and post layouts
+  lib/
+    content.ts        Post/tag query helpers
+    date.ts           Shared date formatting
+    site.ts           Site metadata and nav/social config
+    tagBadgeStyles.ts Neon border palette for tag badges
+  pages/              Routes: home, posts, tags, rss.xml
+  styles/global.css   Tailwind imports + base theme defaults
+```
 
-Most blog templates try to be everything - portfolio, landing page, and blog combined. This template focuses on one thing: **helping you write and share your thoughts** without getting in the way.
+## Writing posts
 
-- No about page (use your first post)
-- No contact forms (link to your socials)
-- No project showcases (that's what GitHub is for)
-- Just clean, readable posts with proper tagging and RSS
+Add a markdown file under `src/content/posts/`:
 
-Start simple. Add complexity only when you need it.
+```md
+---
+title: "My Post"
+pubDate: 2026-03-09
+description: "Short summary used in cards and metadata"
+author: "Your Name"
+image:
+  url: "https://example.com/cover.webp"
+  alt: "Cover image description"
+tags: ["astro", "typescript"]
+---
+
+Post content...
+```
+
+Notes:
+
+- Post URLs come from the file slug, so you do not need a manual `link` field.
+- Tags are normalized to lowercase for tag pages and badge rendering.
+
+## Styling and UI conventions
+
+- Component/page styling is intentionally utility-first in `.astro` files.
+- `src/styles/global.css` is kept small and focused on base-level behavior.
+- Tag badges on cards and the tags index use the shared neon border map in `src/lib/tagBadgeStyles.ts`.
+
+## Configuration
+
+Update `src/lib/site.ts` to change:
+
+- site title and description
+- canonical site URL
+- navigation links
+- social links
+
+If your public domain changes, also update `astro.config.mjs`.
+
+## Updating dependencies
+
+```bash
+pnpm outdated
+pnpm up --latest
+pnpm astro check
+pnpm build
+```
+
+At the time of the latest refresh, `pnpm up --latest` reports this repository is already up to date.
+
+## Build output
+
+`pnpm build` generates a static site in `dist/`, including:
+
+- `/posts/<slug>/`
+- `/tags/<tag>/`
+- `/rss.xml`
+- sitemap files from `@astrojs/sitemap`
 
 ## License
 
-MIT - feel free to use this for your own blog.
+MIT.

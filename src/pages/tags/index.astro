@@ -1,26 +1,39 @@
 ---
-import { getCollection } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const allPosts = await getCollection("posts");
-const tags = [...new Set(allPosts.map((post) => post.data.tags).flat())];
+import { getAllPosts, getSortedTags } from "../../lib/content";
+import { getTagNeonBorderClasses } from "../../lib/tagBadgeStyles";
+
+const allPosts = await getAllPosts();
+const tags = getSortedTags(allPosts);
 const pageTitle = "Tags | MaDr";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <div class="h-[700px]">
-    <div class="tags flex flex-wrap p-4">
-      {
-        tags.map((tag) => (
-          <p class="tag flex whitespace-nowrap">
-            <a
-              class="p-2 px-4 text-xl mx-1 my-1 font-medium border gap-6 hover:bg-[#328eef]"
-              href={`/tags/${tag}`}
-            >
-              {tag}
-            </a>
-          </p>
-        ))
-      }
-    </div>
-  </div>
+<BaseLayout title={pageTitle}>
+	<section class='space-y-6'>
+		<header class='space-y-3'>
+			<p class='text-xs uppercase tracking-[0.2em] text-[#71717a] dark:text-[#a1a1aa]'>
+				Browse by topic
+			</p>
+			<h1 class='text-3xl font-semibold leading-tight text-[#111111] dark:text-white sm:text-4xl'>
+				Tags
+			</h1>
+		</header>
+		<ul class='flex flex-wrap gap-3'>
+			{
+				tags.map((tag) => (
+					<li class="list-none">
+						<a
+							class:list={[
+								"inline-flex rounded-full border bg-white/45 px-4 py-2 text-sm font-medium uppercase tracking-[0.08em] text-[#3f3f46] backdrop-blur-sm transition-all duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white dark:bg-black/25 dark:text-[#d4d4d8] dark:hover:bg-white dark:hover:text-black",
+								getTagNeonBorderClasses(tag),
+							]}
+							href={`/tags/${tag}/`}
+						>
+							{tag}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
 </BaseLayout>

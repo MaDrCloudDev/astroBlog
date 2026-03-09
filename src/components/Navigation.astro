@@ -1,23 +1,32 @@
 ---
-import ThemeIcon from './ThemeIcon.astro';
+import ThemeIcon from "./ThemeIcon.astro";
+import { NAV_LINKS } from "../lib/site";
 ---
 
-<div class='flex w-full justify-between max-w-4xl p-2 mx-auto'>
-	<div class='flex'>
-		<a
-			class='py-2 pb-3 px-4 hover:bg-[#328eef] hover:text-white'
-			href='/'
-			aria-label='Blog home page link'
-			><img src='/MaDrLogoSmall.svg' alt='MaDr logo' /></a
-		>
-		<a
-			class='py-5 px-4 font-bold text-2xl hover:bg-[#328eef] hover:text-white my-auto'
-			href='/tags/'
-			aria-label='Tags page link'
-			>Tags</a
-		>
-	</div>
-	<div class='flex flex-col justify-center mr-4'>
-		<ThemeIcon />
-	</div>
-</div>
+<nav
+  class="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-3 sm:px-6"
+  aria-label="Main navigation"
+>
+  <a
+    class="inline-flex items-center gap-3 rounded-xl px-2 py-2 text-[#171717] hover:bg-black/5 dark:text-[#f4f4f5] dark:hover:bg-white/10"
+    href="/"
+    aria-label="Go to homepage"
+  >
+    <img src="/MaDrLogoSmall.svg" alt="MaDr logo" class="h-8 w-8" />
+    <span class="text-sm font-semibold hidden tracking-[0.2em]">MaDr</span>
+  </a>
+  <div class="flex items-center gap-1 sm:gap-2">
+    {
+      NAV_LINKS.map((item) => (
+        <a
+          class="rounded-lg px-3 py-2 text-sm font-medium text-[#171717] hover:bg-black/5 hover:text-black dark:text-[#e4e4e7] dark:hover:bg-white/10 dark:hover:text-white"
+          href={item.href}
+          aria-label={`Go to ${item.label} page`}
+        >
+          {item.label}
+        </a>
+      ))
+    }
+    <ThemeIcon />
+  </div>
+</nav>
