@@ -1,4 +1,4 @@
-# MaDr Blog
+# astroBlog
 
 A dark-first Astro blog with markdown content, generated tag pages, RSS, sitemap support, and a minimal UI built with Tailwind CSS utilities.
 
